@@ -1,6 +1,7 @@
-import { Instagram, Linkedin, Mail, Phone, Star, Twitter, Youtube } from 'lucide-react'
+import { ChevronDown, Instagram, Linkedin, Mail, Phone, Star, Twitter, Youtube } from 'lucide-react'
 import React from 'react'
 import SecondaryButton from '../../components/buttons/SecondaryButton'
+import { Link } from 'react-router'
 
 const Footer = () => {
     return (
@@ -37,12 +38,12 @@ const Footer = () => {
                         <div className='h-[1px] w-[90%] mx-auto bg-gray-700'></div>
                         {/* reviews */}
                         <div>
-                            <p className='mb-6 ml-6 flex gap-2'> <Star fill='gold' color='transparent'/> 5 star reviews</p>
+                            <p className='mb-6 ml-6 flex gap-2'> <Star fill='gold' color='transparent' /> 5 star reviews</p>
                             <div className='flex gap-4 justify-center'>
                                 <img width={50} src='https://invozone-backend.s3.us-east-1.amazonaws.com/Group_1000005708_c162021cee.svg' />
                                 <img width={50} src='https://invozone-backend.s3.us-east-1.amazonaws.com/Group_1000005711_d7a4bce3b5.svg' />
                                 <img width={50} src='https://invozone-backend.s3.us-east-1.amazonaws.com/Group_1000005710_930415671c.svg    ' />
-                                <img width={50} src='https://invozone-backend.s3.us-east-1.amazonaws.com/Group_1000005709_6f4a5abefb.svg' /> 
+                                <img width={50} src='https://invozone-backend.s3.us-east-1.amazonaws.com/Group_1000005709_6f4a5abefb.svg' />
                             </div>
                         </div>
                         {/* divider */}
@@ -66,50 +67,146 @@ const Footer = () => {
                         <div className="row1 hidden xl:flex gap-4 justify-between flex-wrap ">
                             <div className='flex flex-col gap-4'>
                                 <h1 className='paragraphP1'>Services</h1>
-                                <p>Web App Development</p>
-                                <p>Mobile App Development</p>
-                                <p>Enterprise App Development</p>
-                                <p>AI development service</p>
-                                <p>DevOps service</p>
-                                <p>Software Quality service</p>
-                                <p>UI/UX Design service</p>
-                                <p>Product Development service</p>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Web App Development
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Mobile App Development
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Enterprise App Development
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    AI development service
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    DevOps service
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Software Quality service
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    UI/UX Design service
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Product Development service
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
                             </div>
+
                             <div className='flex flex-col gap-4'>
                                 <h1 className='paragraphP1'>Hire Developer</h1>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dfr</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum 
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
                             </div>
+
                             <div className='flex flex-col gap-4'>
-                                <h1 className='paragraphP1'>Industry</h1>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dfr</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
+                                <h1 className='paragraphP1'>Hire Developer</h1>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum 
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum 
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
                             </div>
+
                             <div className='flex flex-col gap-4'>
-                                <h1 className='paragraphP1'>Company</h1>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum dfr</p>
-                                <p>Lorem ipsum dolor</p>
-                                <p>Lorem ipsum </p>
+                                <h1 className='paragraphP1'>Hire Developer</h1>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum 
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum dolor
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
+                                <Link className='flex group relative w-fit text-sm' to={'/'}>
+                                    Lorem ipsum 
+                                    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-acolor transition-all duration-300 group-hover:w-full"></span>
+                                </Link>
                             </div>
+                           
                         </div>
-                         {/* divider */}
+                        {/* divider */}
                         <div className='h-[1px] w-[90%] mx-auto bg-gray-700'></div>
 
                         {/* Countries */}
