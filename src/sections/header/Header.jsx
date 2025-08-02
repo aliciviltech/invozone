@@ -28,7 +28,7 @@ const Header = () => {
 
             {/* =============Navigation========== */}
             <div className={`absolute top-[100px] ${showMenu ? 'left-0' : 'left-[100%]'} transition-all flex flex-col justify-evenly items-start pl-10 w-screen h-[calc(100vh-100px)] text-black bg-white
-            xl:static ${isScrolled ? 'xl:text-black' : 'text-white'} xl:bg-transparent xl:flex xl:flex-row xl:gap-5 xl:h-fit xl:w-fit xl:justify-center xl:pl-none xl:items-center
+            xl:static ${isScrolled ? 'xl:text-black' : 'xl:text-white'} xl:bg-transparent xl:flex xl:flex-row xl:gap-5 xl:h-fit xl:w-fit xl:justify-center xl:pl-none xl:items-center
             `}>
                 <Link className='flex group relative' to={'/'}>
                     What We Do
