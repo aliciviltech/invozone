@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=WindSong:wght@400;500&display=swap');
+
+@theme {
+    --color-acolor: rgb(34, 118, 255);
+    --color-bcolor: rgb(247, 247, 247);
+    --color-ccolor: rgb(0, 0, 0);
+    --color-dcolor: rgb(240, 240, 240);
+    --color-ecolor: rgb(229, 229, 229);
+    --color-pcolor: rgb(108, 118, 134);
+    --color-borderColor: rgb(222, 231, 238);
+    --color-footerBg: rgb(5, 11, 33);
+    --font-product: "PT Sans", sans-serif;
+
+    --animate-blur-card: blur-in-out 0.6s ease-in-out;
+
+    @keyframes blur-in-out {
+          0% { filter: blur(0px) }
+          50% { filter: blur(4px) }
+          100% { filter: blur(0px)}
+        }
+    
+
+}
+:root{
+    --acolor: rgb(34, 118, 255);
+    --bcolor: rgb(247, 247, 247);
+    --ccolor: rgb(0, 0, 0);
+}
+*{
+    font-family: "PT Sans", sans-serif;
+}
+.section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:100px 40px;
+}
+.h1{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71px;
+}
+.h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+.h3{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.h4{
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 700;
+}
+.h5{
+    font-size: 26px;
+    line-height: 41px;
+    font-weight: 700;
+}
+.paragraphP1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+
+}
+.paragraphP2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.paragraphP3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 39px;
+}
+.paragraphP4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+
+@media screen and (max-width:767px) {
+    .section {
+        padding: 100px 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46px;
+}
+}
+
