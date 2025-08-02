@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import Home from './pages/Home/Home'
+import Home from './pages/home/Home'
 
 const App = () => {
   return (
